@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+/* container */
+.result-container, .dashboard-container, .exercise-container, #login-container {
+    background: white;
+    max-width: 800px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border: 1px solid #ccc;
+}
+/* login */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+/* đăng nhập, view, back to dash.. */
+button {
+    width: 100%;
+    padding: 10px;
+    background: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#login-title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    margin-top: 0;
+    padding-top: 20px; /* Thêm khoảng cách từ đầu trang */
+}
+
+#login-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form label {
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login-form button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+    background-color: #0056b3;
+}
+
+.forgot-password,
+.create-account {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-password:hover,
+.create-account:hover {
+    text-decoration: underline;
+}
+/* result  */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: center;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #004494;
+}
+
+#retryButton {
+    background-color: #bd4162;
+    color: white;
+}
+#retryButton:hover {
+    background-color: #9e2b4a;
+}
+/* dashboard */
+h2 {
+    margin-top: 0;
+}
+
+
+.filter-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#languageFilter{
+    padding: 10px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#keywordSearch {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#exerciseList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.exercise-item {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.exercise-item:hover {
+    background-color: #f4f4f4;
+}
+
+#dashboardButton {
+    background-color: #0056b3;
+    color: white;
+}
+#dashboardButton :hover {
+    background-color: #004494;
+}
+
+.filter-section select{
+    padding:0px;
+    margin-right: 10px;
+}
+.filter-section input {
+    padding:0px;
+    margin-right: 0px;
+}
+/* exercise */
+.exercise-item h3 {
+    margin-top: 0;
+}
+
+#codeEditor {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+#runButton, #submitButton {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#runButton {
+    background-color: #0056b3;
+    color: white;
+}
+
+#runButton:hover {
+    background-color: #004494;
+}
+
+#submitButton {
+    background-color: #2e9f48;
+    color: white;
+}
+#submitButton :hover {
+    background-color: #18743b;
+}
+#output {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+    white-space: pre-wrap;
+}

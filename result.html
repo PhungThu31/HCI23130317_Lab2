@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Kết quả nộp bài</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="result-container">
+        <h2>Submission Results</h2>
+        <p>Status: <span id="submissionStatus"></span></p>
+        <h3>Test Case Details:</h3>
+
+        <table id="testCaseTable">
+            <thead>
+                <tr>
+                    <th>Test Case</th>
+                    <th>Input</th>
+                    <th>Expected Output</th>
+                    <th>Actual Output</th>
+                    <th>Result</th>
+                </tr>
+            </thead>            
+            <tbody>
+                <!-- Chi tiết test case sẽ được chèn ở đây -->
+            </tbody>
+        </table>
+            <p>Score: <span id="submissionScore"></span></p>
+            <p>Time: <span id="submissionTime"></span></p>
+            <p>Memory: <span id="submissionMemory"></span></p>
+            <button id="retryButton">Retry</button>
+            <button id="dashboardButton">Back to Dashboard</button>
+
+    </div>
+
+    <script src="result.js"></script>
+</body>
+</html>
